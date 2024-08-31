@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import pic from "../src/assets/logo.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
-import NavLinks from "./NavLinks";
+import NavLinks from "../src/Navlinks";
 import MobileNav from "./MobileNav";
 
 function Navbar() {

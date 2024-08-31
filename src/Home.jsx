@@ -312,7 +312,7 @@ function Home() {
           </div>
           <div className="flex flex-col space-y-5 ">
           <div className="lg:auto md:w-auto sm:w-[40rem] mt-5">
-s          <div className="flex justify-between mb-2">
+         <div className="flex justify-between mb-2">
                 <p className="text-white">Latest Equipemnts Used</p>
                 <span className="text-white">95%</span>
               </div>
