@@ -324,7 +324,7 @@ function Home() {
                 <p className="text-white">Factories Production</p>
                 <span className="text-white">80%</span>
               </div>
-              <Progress value={65} className=" " />
+              <Progress value={80} className=" " />
             </div>
 
             <div className="lg:auto md:w-auto sm:w-[40rem] mt-5">
@@ -332,7 +332,7 @@ function Home() {
                 <p className="text-white">Management & Services</p>
                 <span className="text-white">65%</span>
               </div>
-              <Progress value={80} className="" />
+              <Progress value={65} className="" />
             </div>
           </div>
         </div>

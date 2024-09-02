@@ -43,7 +43,7 @@ function Techinfo() {
         <div className="absolute inset-0 bg-black opacity-50"></div>{" "}
         {/* Overlay */}
         <div className="container mx-auto px-4 relative z-10 text-bold">
-          <h1 className="text-6xl text-white font-bold uppercase">
+          <h1 className="text-4xl md:text-6xl text-white font-bold uppercase">
             CHEMICAL COMPOSITION
           </h1>
           <div className="text-white mt-2">
