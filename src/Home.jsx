@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./Navbar";
 import Carousel from "./shared/Carousel";
 import steelImg from "./assets/about.png";
@@ -9,7 +9,8 @@ import image3 from "./assets/img-3.png";
 import logos from "./assets/logos.jpg";
 import { FaHandPointRight } from "react-icons/fa";
 import { Progress } from "@/components/ui/progress";
-
+import Aos from "aos";
+import "aos/dist/aos.css"
 import {
   Card,
   CardContent,
@@ -18,6 +19,10 @@ import {
 } from "@/components/ui/card";
 
 function Home() {
+
+  useEffect(()=>{
+    Aos.init()
+  },[])
   const card = [1, 2, 3, 4];
   const card1 = [1, 2, 3];
   const card2 = [1, 2, 3, 4, 5];
@@ -34,7 +39,7 @@ function Home() {
 
       <div className=" flex flex-col md:flex-row ">
         {/* image */}
-        <div className="w-full md:w-1/2   ">
+        <div data-aos="fade-right" className="w-full md:w-1/2   ">
           <img
             src={steelImg}
             alt="img"
@@ -311,8 +316,8 @@ function Home() {
             </h1>
           </div>
           <div className="flex flex-col space-y-5 ">
-          <div className="lg:auto md:w-auto sm:w-[40rem] mt-5">
-         <div className="flex justify-between mb-2">
+            <div className="lg:auto md:w-auto sm:w-[40rem] mt-5">
+              <div className="flex justify-between mb-2">
                 <p className="text-white">Latest Equipemnts Used</p>
                 <span className="text-white">95%</span>
               </div>
